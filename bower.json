@@ -1,0 +1,25 @@
+{
+  "name": "Test-task",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Andrushchenko Vladislava"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vlada1/test-task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "owl.carousel": "^2.2.1",
+    "jquery-ui": "^1.12.1",
+    "font-awesome": "^4.7.0"
+  }
+}
