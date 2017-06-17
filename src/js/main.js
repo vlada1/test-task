@@ -5,4 +5,4 @@
 /*
  * Custom
  */
-//= partials/style.js
+//= partials/script.js
