@@ -1,26 +1,28 @@
 @font-face {
-  .font(@sansRegular,@sansRegular,normal);
+  .font(@sans,@sansRegular,normal);
 }
 @font-face {
-  .font(@sansRegular,@sansSemiBold,600);
+  .font(@sans,@sansSemiBold,600);
 }
 @font-face {
-  .font(@sansRegular,@sansExtraBold,800);
+  .font(@sans,@sansExtraBold,800);
 }
 @font-face {
 	.font(@lobster,@lobster,normal);
 }
-@font-face {
+/*@font-face {
 	.font(@fontAwsome,@fontAwsome,normal);
-}
+}*/
 
 html {
-	font: 10px/15px 'Open Sans', sans-serif;
+	font-size: 10px;
+	line-height: 15px;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'OpenSans', sans-serif;
 	color: #4e525d;
 	background-color: #fff;
 }
@@ -70,14 +72,15 @@ a {
 
 			&__item {
 				display: inline-block;
-				margin-left: 11px;
+				margin-left: 8px;
 				padding: 22px 0;
 
 				& a {
 					box-sizing: border-box;
 					display: block;
 					padding: 20px 24px 20px 20px;
-					font: 1.5rem/1.6rem 'Open Sans', sans-serif;
+					font-size: 1.5rem;
+					line-height: 1.6rem;
 					color: #484c55;
 				}
 
@@ -186,7 +189,8 @@ a {
 				display: block;
 				width: 30%;
 				padding: 15px 25px;
-				font: 1.5rem/1.6rem 'Open Sans', sans-serif;
+				font-size: 1.5rem;
+				line-height: 1.6rem;
 				color: #484c55;
 			}
 
@@ -243,15 +247,15 @@ a {
 	.owl-prev,
 	.owl-next {
 		position: absolute;
-		top: 275px;
+		top: 44%;
 	}
 
 	.owl-prev {
-		left: 80px;
+		left: 6%;
 	}
 
 	.owl-next {
-		right: 80px;
+		right: 6%;
 	}
 
 	.owl-theme .owl-nav {
@@ -263,15 +267,38 @@ a {
 
 		&__title {
 			position: absolute;
-			top: 140px;
-			left: 455px;
-			width: 44%;
+			top: 17%;
+			width: 100%;
 			color: #fff;
 			text-align: center;
 
 			& h1 {
-				margin-bottom: 45px;
-				font: 600 6.3rem/5rem 'Open Sans', sans-serif;
+				font-size: 6.3rem;
+				line-height: 1.8em;
+				font-weight: 600;
+			}
+
+			& p {
+				width: 25%;
+				margin: 0 auto 50px auto;
+				font-size: 2.3rem;
+				line-height: 4.1rem;
+			}
+
+			& a {
+				display: block;
+				width: 14.5%;
+				margin: 0 auto;
+				font-size: 2.6rem;
+				line-height: 6rem;
+				color: #fff;
+				border: 3px solid #fff;
+				border-radius: 6px;
+
+				&:hover {
+					color: #4b8b86;
+					background-color: #fff;
+				}
 			}
 		}
 
