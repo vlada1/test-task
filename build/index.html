@@ -18,7 +18,7 @@
           <button class="page-nav__toggle" type="button"> Открыть меню </button>
 
           <ul class="page-nav__list">
-            <li class="page-nav__item"><a class="active" href="#home">Home</a></li>
+            <li class="page-nav__item"><a href="#">Home</a></li>
             <li class="page-nav__item"><a href="#">Service</a></li>
             <li class="page-nav__item"><a href="#">Portfolio</a></li>
             <li class="page-nav__item"><a href="#team">Team</a></li>
@@ -30,9 +30,9 @@
     </header>
 
     <main class="page-content">
-      <div id="home" class="tracked gallery1">
-        <div class="gallery1__wrapper">
-          <div id="main-slider" class="owl-carousel owl-theme">
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <div class="owl-carousel owl-theme">
             <div class="item">
               <div class="item__title">
                 <h1>This is a main heading</h1>
@@ -46,119 +46,103 @@
                 <h1>This is a main heading</h1>
                 <p>Lorem Ipsum is simply dummy text of a printing</p>
                 <a href="#">Learn more</a>
-              </div>
+              </div>    
               <img src="img/slider-img.png" alt="slide-bg">
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section id="team" class="tracked">
+      <section id="team">
         <div class="team__wrapper">
-          <h2>The Team</h2>
-          <div class="gallery">
-            <div id="team-slider" class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="item__logo">
-                    <img src="img/team-img.png" alt="logo">
-                </div>
-                <h3>Adrian Thomas</h3>
-                <span>CEO &amp; Founder</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
-              </div>
-              <div class="item">
-                <div class="item__logo">
-                  <img src="img/team-img.png" alt="logo">
-                  <a class="plus" href="#">+</a>
-                </div>
-                <h3>Narate Ketram</h3>
-                <span>Creative Director</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
-              </div>
-              <div class="item">
-                <div class="item__logo">
-                    <img src="img/team-img.png" alt="logo">
-                </div>
-                <h3>Fernando Comet</h3>
-                <span>CEO &amp; Founder</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
-              </div>
-              <div class="item">
-                <div class="item__logo">
-                    <img src="img/team-img.png" alt="logo">
-                </div>
-                <h3>Adedayo Saheed</h3>
-                <span>Creative Director</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
-              </div>
-            </div>
+          <h2>Team</h2>
+          <div class="team__item">
+            <img src="img/team-img.png" alt="logo">
+            <h3>Adrian Thomas</h3>
+            <span>CEO &amp; Founder</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+          </div>
+          <div class="team__item">
+            <img src="img/team-img.png" alt="logo">
+            <i class="icon-plus"></i>
+            <h3>Narate Ketram</h3>
+            <span>Creative Director</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+          </div>
+          <div class="team__item">
+            <img src="img/team-img.png" alt="logo">
+            <h3>Fernando Comet</h3>
+            <span>CEO &amp; Founder</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+          </div>
+          <div class="team__item">
+            <img src="img/team-img.png" alt="logo">
+            <h3>Adedayo Saheed</h3>
+            <span>Creative Director</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
           </div>
         </div>
       </section>
 
       <div class="subscribe">
         <div class="subscribe__wrapper">
-          <div class="gallery">
-            <div id="subscribe-slider" class="owl-carousel owl-theme">
-              <div class="item">
-                <h3 class="subscribe__title">Basic</h3>
-                <span class="subscribe__price">$5.01/ Month</span>
-                <ul class="subscribe__features">
-                  <li>Lorem ipsum</li>
-                  <li>Dolor sit amet, consect</li>
-                  <li>Adipiscing elit</li>
-                  <li>Proin commodo turpis</li>
-                  <li>lacus pulvinarvel </li>
-                  <li>Prnare nisi pretium.</li>
-                </ul>
-                <span class="buy"><a class="buy__button" href="#">Buy now</a></span>
-              </div>
-              <div class="item">
-                <h3 class="subscribe__title">Pro</h3>
-                <span class="subscribe__price">$10.01/ Month</span>
-                <ul class="subscribe__features">
-                  <li>Lorem ipsum</li>
-                  <li>Dolor sit amet, consect</li>
-                  <li>Adipiscing elit</li>
-                  <li>Proin commodo turpis</li>
-                  <li>lacus pulvinarvel </li>
-                  <li>Prnare nisi pretium.</li>
-                </ul>
-                <span class="buy"><a class="buy__button" href="#">Buy now</a></span>
-              </div>
-              <div class="item">
-                <h3 class="subscribe__title">Premium</h3>
-                <span class="subscribe__price">$20.01/ Month</span>
-                <ul class="subscribe__features">
-                  <li>Lorem ipsum</li>
-                  <li>Dolor sit amet, consect</li>
-                  <li>Adipiscing elit</li>
-                  <li>Proin commodo turpis</li>
-                  <li>lacus pulvinarvel </li>
-                  <li>Prnare nisi pretium.</li>
-                </ul>
-                <span class="buy"><a class="buy__button" href="#">Buy now</a></span>
-              </div>
-            </div>
+          <div>
+            <h3>Basic</h3>
+            <span class="subscribe__price">$5.01/ Month</span>
+            <ul class="subscribe__features">
+              <li>Lorem ipsum</li>
+              <li>Dolor sit amet, consect</li>
+              <li>Adipiscing elit</li>
+              <li>Proin commodo turpis</li>
+              <li>lacus pulvinarvel </li>
+              <li>Prnare nisi pretium.</li>
+            </ul>
+            <a class="buy" href="#">Buy now</a>
+          </div>
+          <div>
+            <h3>Pro</h3>
+            <span class="subscribe__price">$10.01/ Month</span>
+            <ul class="subscribe__features">
+              <li>Lorem ipsum</li>
+              <li>Dolor sit amet, consect</li>
+              <li>Adipiscing elit</li>
+              <li>Proin commodo turpis</li>
+              <li>lacus pulvinarvel </li>
+              <li>Prnare nisi pretium.</li>
+            </ul>
+            <a class="buy" href="#">Buy now</a>
+          </div>
+          <div>
+            <h3>Premium</h3>
+            <span class="subscribe__price">$20.01/ Month</span>
+            <ul class="subscribe__features">
+              <li>Lorem ipsum</li>
+              <li>Dolor sit amet, consect</li>
+              <li>Adipiscing elit</li>
+              <li>Proin commodo turpis</li>
+              <li>lacus pulvinarvel </li>
+              <li>Prnare nisi pretium.</li>
+            </ul>
+            <a class="buy" href="#">Buy now</a>
           </div>
         </div>
       </div>
     </main>
 
-  <footer id="contact" class="tracked page-footer">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <h2>Contact Us</h2>
+      <h2>Contact us</h2>
       <form class="page-footer__form" action="index.html" method="post">
         <fieldset>
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email">
           <textarea name="message" placeholder="Message"></textarea>
-          <button class="send" type="button" name="send">Send</button>
+          <button type="button" name="send">Send</button>
         </fieldset>
       </form>
       <div class="get-in-touch">
-        <h3>Get in touch with us</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+        <h3></h3>
+        <p></p>
         <ul class="social">
           <li><a class="fb" href="#"><i class="icon-facebook"></i></a></li>
           <li><a class="tw" href="#"><i class="icon-twitter"></i></a></li>
