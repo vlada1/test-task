@@ -1,10 +1,10 @@
 .font(@fontName; @urlName; @weight; @style: normal) {
   font-family: '@{fontName}';
-  src: url('../../fonts/@{fontName}/@{urlName}.eot');
-  src: url('../../fonts/@{fontName}/@{urlName}.eot#iefix') format('embedded-opentype'),
-  url('../../fonts/@{fontName}/@{urlName}.woff') format('woff'),
-    url('../../fonts/@{fontName}/@{urlName}.ttf') format('truetype'),
-    url('../../fonts/@{fontName}/@{urlName}.svg') format('svg');
+  src: url('../fonts/@{fontName}/@{urlName}.eot');
+  src: url('../fonts/@{fontName}/@{urlName}.eot#iefix') format('embedded-opentype'),
+  url('../fonts/@{fontName}/@{urlName}.woff') format('woff'),
+    url('../fonts/@{fontName}/@{urlName}.ttf') format('truetype'),
+    url('../fonts/@{fontName}/@{urlName}.svg') format('svg');
     font-weight: @weight;
     font-style: @style;
 }
@@ -21,12 +21,17 @@
 	max-width: 1170px;
 	margin: 0 auto;
 
+	@media @laptop {
+		max-width: 1100;
+		margin: 0 5px;
+	}
+
 	@media @tablet {
 		max-width: 768px;
 		margin: 0 5px;
 	}
 
-	@media @mobile-max {
+	@media @mobile-xl {
 		max-width: 640px;
 		margin: 0 5px;
 	}
