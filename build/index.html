@@ -150,11 +150,11 @@
       <h2>Contact Us</h2>
       <form class="page-footer__form" action="index.html" method="post">
         <fieldset>
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
-          <textarea name="message" placeholder="Message"></textarea>
-          <button class="send" type="button" name="send">Send</button>
+          <input id="name" type="text" name="name" placeholder="Name" minlength="2" required>
+          <input id="email" type="email" name="email" placeholder="Email" required>
         </fieldset>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        <button class="send" type="button" name="send">Send</button>
       </form>
       <div class="get-in-touch">
         <h3>Get in touch with us</h3>

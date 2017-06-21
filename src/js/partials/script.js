@@ -76,4 +76,38 @@ $(document).ready(function() {
         }
     });
 
+    $(function() {
+
+        $('.page-footer__form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name. Field is required",
+                    minlength: "Expected at least 2 characters"
+                },
+                email: {
+                    required: "Please enter your email. Field is required",
+                    email: "Please enter valid email"
+                },
+                message: {
+                    required: "Please enter your message. Field is required"
+                }
+            }
+        });
+
+
+    });
+
 });

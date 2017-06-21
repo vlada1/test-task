@@ -583,17 +583,25 @@ a {
 
 	&__form {
 		float: right;
-		width: 50%;
+		width: 48%;
 
 		& fieldset {
+			text-align: justify;
 			padding: 0;
 			border: none;
 			outline: none;
+
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 100%;
+			}
 		}
 
 		& input {
 			box-sizing: border-box;
-			width: 46.5%;
+			display: inline-block;
+			width: 46%;
 			margin-bottom: 30px;
 			padding-left: 20px;
 			font-size: 1.6rem;
@@ -605,16 +613,12 @@ a {
 			outline: none;
 		}
 
-		& input[type="text"] {
-			margin-right: 5.5%;
-		}
-
 		& textarea {
 			box-sizing: border-box;
 			display: block;
 			width: 100%;
 			min-height: 180px;
-			margin-bottom: 30px;
+			margin: 0 0 30px 0;
 			padding: 15px 0 0 20px;
 			font-size: 1.6rem;
 			line-height: 3rem;
@@ -624,6 +628,20 @@ a {
 			border: none;
 			outline: none;
 			resize: none;
+		}
+
+		label.error {
+			display: block;
+			margin-bottom: 30px;
+			padding-left: 15px;
+			font-size: 1.2rem;
+			color: #e44c41;
+		}
+
+		& input.error {
+			display: block;
+			margin-bottom: 0;
+			border: 2px solid #e44c41;
 		}
 
 		& .send {
@@ -712,6 +730,7 @@ a {
 			color: #bface2;
 		}
 	}
+
 }
 
 @media screen and @tablet {
@@ -736,6 +755,13 @@ a {
 
 @media screen and @mobile-xl {
 	.page-footer {
+
+		&__form {
+			& input {
+				width: 100%;
+			}
+		}
+
 		& .get-in-touch .social {
 			width: 50%;
 		}
@@ -745,7 +771,7 @@ a {
 @media screen and @mobile {
 	.page-footer {
 		& .get-in-touch .social {
-			width: 70%;
+			width: 65%;
 		}
 	}
 }
