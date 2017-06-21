@@ -17,7 +17,7 @@ $(function() {
             active_link.addClass("active");
 
         },
-        offset: '10%'
+        offset: '99px'
     });
 
 
