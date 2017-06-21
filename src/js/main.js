@@ -3,10 +3,7 @@
 //= ../../bower_components/jquery-waypoints/waypoints.min.js
 //= ../../bower_components/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js
 //= ../../bower_components/jquery-validation/dist/jquery.validate.min.js
-<<<<<<< HEAD
-=======
 
->>>>>>> adaptive
 /*
  * Custom
  */
